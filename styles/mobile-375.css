@@ -1,9 +1,13 @@
 :root {
   /*#Primary*/
   --Light-red: hsl(0, 100%, 67%);
+  --Light-red-o: hsla(0, 100%, 67%,0.1);
   --Orangey-yellow: hsl(39, 100%, 56%);
+  --Orangey-yellow-o: hsla(39, 100%, 56%,0.1);
   --Green-teal: hsl(166, 100%, 37%);
+  --Green-teal-o: hsla(166, 100%, 37%,0.1);
   --Cobalt-blue: hsl(234, 85%, 45%);
+  --Cobalt-blue-o: hsla(234, 85%, 45%,0.1);
 
   /*#Gradients*/
   --Light-slate-blue: hsl(252, 100%, 67%);
@@ -72,4 +76,52 @@
   font-size: 23px;
   font-weight: 600;
   padding: 20px 0 15px 0;
+}
+.summary-section{
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.boton{
+  background-color: var(--Dark-gray-blue);
+  padding: 12px 0;
+  border-radius: 26px;
+  color: var(--White);
+  font-size: 15px;
+  font-weight: 700;
+}
+.contenido{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 8px;
+}
+.contenido p:nth-child(2){
+  color: var(--Light-lavender);
+}
+.contenido p:nth-child(2) span{
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+}
+.contenido p:nth-child(1){
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contenido:nth-child(2){
+  color:var(--Light-red);
+  background-color: var(--Light-red-o);
+}
+.contenido:nth-child(3){
+  color: var(--Orangey-yellow);
+  background-color: var(--Orangey-yellow-o);
+}
+.contenido:nth-child(4){
+  color: var(--Green-teal);
+  background-color: var(--Green-teal-o);
+}
+.contenido:nth-child(5){
+  color: var(--Cobalt-blue);
+  background-color: var(--Cobalt-blue-o);
 }
